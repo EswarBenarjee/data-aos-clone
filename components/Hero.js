@@ -1,6 +1,6 @@
 import React from "react";
 
-import RandomImage from "@/components/RandomImage";
+import RandomImage from "@/components/reusables/RandomImage";
 import { FaAngleDown } from "react-icons/fa6";
 
 const Hero = () => {

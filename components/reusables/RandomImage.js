@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const randomNumberGenerator = (min, max) => {
   return Math.floor(Math.random() * (max - min) + min);

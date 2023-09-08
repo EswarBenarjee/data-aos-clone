@@ -18,19 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-.hero {
   background-image: url("/img/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hero {
   height: 100vh;
 }
 .hero img {
@@ -114,4 +108,26 @@ body {
     -webkit-transform: translate(0, 10px);
     transform: translate(0, 10px);
   }
+}
+
+.footer {
+  background: #0e0f34;
+}
+.footer code {
+  display: block;
+  overflow-x: auto;
+  background: #202746;
+  color: #979db4;
+  padding: 0.5em 2rem;
+  -webkit-text-size-adjust: none;
+  margin: 1em 0;
+}
+.footer code .title {
+  color: aquamarine;
+}
+.footer code .operation {
+  color: blueviolet;
+}
+.footer code .link {
+  color: darkorange;
 }
