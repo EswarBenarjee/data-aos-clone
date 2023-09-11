@@ -2,11 +2,10 @@ import React from "react";
 
 import { Suspense } from "react";
 
-import Loading from "./loading";
-
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Property from "@/components/Property";
+import Loading from "@/components/Loading";
 
 const properties = require("@/data/properties.json");
 

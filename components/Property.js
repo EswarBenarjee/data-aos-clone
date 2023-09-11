@@ -19,7 +19,7 @@ const Property = ({ propertyName, properties, children }) => {
             <AOS
               key={index}
               dataAOS={property}
-              className="lg:w-1/2 border-4 p-4 py-20 text-center bg-[#172554] overflow-x-auto my-5 lg:my-40"
+              className="lg:w-1/2 border-4 p-4 py-20 text-center bg-[#172554] overflow-x-auto my-20 lg:my-40"
             >
               <code>
                 {"<"}
