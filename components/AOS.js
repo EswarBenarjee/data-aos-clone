@@ -9,6 +9,7 @@ const AOS = (props) => {
   const targetRef = useRef(null);
   const [isInViewport, wrappedTargetRef] = useIsInViewport({
     target: targetRef,
+    threshold: 50,
   });
 
   return (
