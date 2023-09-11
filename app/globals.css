@@ -55,20 +55,19 @@ body {
 }
 
 @keyframes imgFloat1 {
-  0% {
+  from {
     top: -25vh;
   }
-  100% {
+  to {
     top: -15vh;
   }
 }
 
 @keyframes imgFloat2 {
-  0% {
+  from {
     top: -30vh;
   }
-
-  100% {
+  to {
     top: -20vh;
   }
 }
@@ -77,19 +76,17 @@ body {
   0% {
     left: -20vw;
   }
-
-  100% {
+  to {
     left: -30vw;
   }
 }
 
 @keyframes imgFloat4 {
-  0% {
+  from {
     bottom: -20vw;
     right: -20vw;
   }
-
-  100% {
+  to {
     bottom: -15vw;
     right: -10vw;
   }
@@ -99,12 +96,11 @@ body {
   animation: bounceAnimation 2s ease-in-out infinite alternate;
 }
 @keyframes bounceAnimation {
-  0% {
+  from {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
-
-  100% {
+  to {
     -webkit-transform: translate(0, 10px);
     transform: translate(0, 10px);
   }
@@ -122,12 +118,117 @@ body {
   -webkit-text-size-adjust: none;
   margin: 1em 0;
 }
-.footer code .title {
+code .title {
   color: aquamarine;
 }
-.footer code .operation {
+code .operation {
   color: blueviolet;
 }
-.footer code .link {
+code .link {
   color: darkorange;
+}
+
+/* Align to right side */
+@media screen and (min-width: 1076px) {
+  .aos-items div:nth-child(even) {
+    margin: 0 0 0 auto;
+  }
+}
+
+div[data-aos="fade-up"] {
+  animation: moveUp 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-down"] {
+  animation: moveDown 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-left"] {
+  animation: moveLeft 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-right"] {
+  animation: moveRight 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-up-left"] {
+  animation: moveUpLeft 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-up-right"] {
+  animation: moveUpRight 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-down-left"] {
+  animation: moveDownLeft 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-down-right"] {
+  animation: moveDownRight 1s ease-in-out, fade 1s ease-in-out;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveLeft {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes moveUpLeft {
+  from {
+    transform: translate(50px, 50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveUpRight {
+  from {
+    transform: translate(-50px, 50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveDownLeft {
+  from {
+    transform: translate(50px, -50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveDownRight {
+  from {
+    transform: translate(-50px, -50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
