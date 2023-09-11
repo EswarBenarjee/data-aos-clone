@@ -1,1 +1,3 @@
-![logo](public/img/hero.png "logo")
+![logo](public/img/readme.png "logo")
+
+**Data AOS Clone by Eswar Benarjee**
