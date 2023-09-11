@@ -17,6 +17,7 @@ export default function Home() {
 
         <div className="p-5 lg:py-20 lg:px-44">
           <Property propertyName="fade" properties={properties["fade"]} />
+          <Property propertyName="flip" properties={properties["flip"]} />
         </div>
 
         <Footer />

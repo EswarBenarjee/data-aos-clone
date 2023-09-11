@@ -192,6 +192,8 @@ code .link {
 div[data-aos] {
   opacity: 0;
 }
+
+/* FADE */
 div[data-aos="fade-up"] {
   animation: moveUp 1s ease-in-out, fade 1s ease-in-out;
 }
@@ -287,5 +289,52 @@ div[data-aos="fade-down-right"] {
   }
   to {
     opacity: 1;
+  }
+}
+
+/* FLIP */
+div[data-aos="flip-up"] {
+  animation: flipUp 1s ease-in-out;
+}
+div[data-aos="flip-left"] {
+  animation: flipLeft 1s ease-in-out;
+}
+div[data-aos="flip-down"] {
+  animation: flipDown 1s ease-in-out;
+}
+div[data-aos="flip-right"] {
+  animation: flipRight 1s ease-in-out;
+}
+
+@keyframes flipUp {
+  from {
+    transform: perspective(2500px) rotateX(-100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateX(0);
+  }
+}
+@keyframes flipLeft {
+  from {
+    transform: perspective(2500px) rotateY(-100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateY(0);
+  }
+}
+@keyframes flipDown {
+  from {
+    transform: perspective(2500px) rotateX(100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateX(0);
+  }
+}
+@keyframes flipRight {
+  from {
+    transform: perspective(2500px) rotateY(100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateY(0);
   }
 }
