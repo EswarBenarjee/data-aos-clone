@@ -13,7 +13,7 @@ export default function Home() {
     <main className="overflow-x-hidden">
       <Hero />
 
-      <div className="p-5 lg:py-20 lg:px-96">
+      <div className="p-5 lg:py-20 lg:px-44">
         <Property propertyName="fade" properties={properties["fade"]} />
       </div>
 

@@ -135,6 +135,9 @@ code .link {
   }
 }
 
+div[data-aos] {
+  opacity: 0;
+}
 div[data-aos="fade-up"] {
   animation: moveUp 1s ease-in-out, fade 1s ease-in-out;
 }
