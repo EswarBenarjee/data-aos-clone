@@ -18,12 +18,12 @@ const Hero = () => {
         - Animate on Scroll Library
       </span>
 
-      <p className="text-xl text-center absolute bottom-20">
+      <div className="text-xl text-center absolute bottom-20">
         <div>Scroll Down</div>
         <div className="bounce flex justify-center text-[#4c0519]">
           <FaAngleDown />
         </div>
-      </p>
+      </div>
     </div>
   );
 };

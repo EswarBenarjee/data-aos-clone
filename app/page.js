@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./aos.css";
+
 import { Suspense } from "react";
 
 import Hero from "@/components/Hero";

@@ -1,0 +1,265 @@
+/* DATA AOS  */
+div[data-aos] {
+  opacity: 0;
+}
+
+/* FADE */
+div[data-aos="fade-up"] {
+  animation: moveUp 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-down"] {
+  animation: moveDown 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-left"] {
+  animation: moveLeft 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-right"] {
+  animation: moveRight 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-up-left"] {
+  animation: moveUpLeft 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-up-right"] {
+  animation: moveUpRight 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-down-left"] {
+  animation: moveDownLeft 1s ease-in-out, fade 1s ease-in-out;
+}
+div[data-aos="fade-down-right"] {
+  animation: moveDownRight 1s ease-in-out, fade 1s ease-in-out;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveLeft {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes moveUpLeft {
+  from {
+    transform: translate(50px, 50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveUpRight {
+  from {
+    transform: translate(-50px, 50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveDownLeft {
+  from {
+    transform: translate(50px, -50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveDownRight {
+  from {
+    transform: translate(-50px, -50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* FLIP */
+div[data-aos="flip-up"] {
+  animation: flipUp 1s ease-in-out;
+}
+div[data-aos="flip-left"] {
+  animation: flipLeft 1s ease-in-out;
+}
+div[data-aos="flip-down"] {
+  animation: flipDown 1s ease-in-out;
+}
+div[data-aos="flip-right"] {
+  animation: flipRight 1s ease-in-out;
+}
+
+@keyframes flipUp {
+  from {
+    transform: perspective(2500px) rotateX(-100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateX(0);
+  }
+}
+@keyframes flipLeft {
+  from {
+    transform: perspective(2500px) rotateY(-100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateY(0);
+  }
+}
+@keyframes flipDown {
+  from {
+    transform: perspective(2500px) rotateX(100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateX(0);
+  }
+}
+@keyframes flipRight {
+  from {
+    transform: perspective(2500px) rotateY(100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateY(0);
+  }
+}
+
+/* ZOOM */
+div[data-aos="zoom-in"] {
+  animation: zoomIn 1s ease-in-out;
+}
+div[data-aos="zoom-in-up"] {
+  animation: zoomInUp 1s ease-in-out;
+}
+div[data-aos="zoom-in-left"] {
+  animation: zoomInLeft 1s ease-in-out;
+}
+div[data-aos="zoom-in-down"] {
+  animation: zoomInDown 1s ease-in-out;
+}
+div[data-aos="zoom-in-right"] {
+  animation: zoomInRight 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoomInUp {
+  from {
+    transform: scale(0.5) translateY(100px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes zoomInLeft {
+  from {
+    transform: scale(0.5) translateX(100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes zoomInDown {
+  from {
+    transform: scale(0.5) translateY(-100px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes zoomInRight {
+  from {
+    transform: scale(0.5) translateX(-100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+
+div[data-aos="zoom-out"] {
+  animation: zoomOut 1s ease-in-out;
+}
+div[data-aos="zoom-out-up"] {
+  animation: zoomOutUp 1s ease-in-out;
+}
+div[data-aos="zoom-out-left"] {
+  animation: zoomOutLeft 1s ease-in-out;
+}
+div[data-aos="zoom-out-down"] {
+  animation: zoomOutDown 1s ease-in-out;
+}
+div[data-aos="zoom-out-right"] {
+  animation: zoomOutRight 1s ease-in-out;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoomOutUp {
+  from {
+    transform: scale(1.1) translateY(100px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes zoomOutLeft {
+  from {
+    transform: scale(1.1) translateX(100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes zoomOutDown {
+  from {
+    transform: scale(1.1) translateY(-100px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes zoomOutRight {
+  from {
+    transform: scale(1.1) translateX(-100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
