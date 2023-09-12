@@ -338,3 +338,118 @@ div[data-aos="flip-right"] {
     transform: perspective(2500px) rotateY(0);
   }
 }
+
+/* ZOOM */
+div[data-aos="zoom-in"] {
+  animation: zoomIn 1s ease-in-out;
+}
+div[data-aos="zoom-in-up"] {
+  animation: zoomInUp 1s ease-in-out;
+}
+div[data-aos="zoom-in-left"] {
+  animation: zoomInLeft 1s ease-in-out;
+}
+div[data-aos="zoom-in-down"] {
+  animation: zoomInDown 1s ease-in-out;
+}
+div[data-aos="zoom-in-right"] {
+  animation: zoomInRight 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoomInUp {
+  from {
+    transform: scale(0.5) translateY(100px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes zoomInLeft {
+  from {
+    transform: scale(0.5) translateX(100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes zoomInDown {
+  from {
+    transform: scale(0.5) translateY(-100px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes zoomInRight {
+  from {
+    transform: scale(0.5) translateX(-100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+
+div[data-aos="zoom-out"] {
+  animation: zoomOut 1s ease-in-out;
+}
+div[data-aos="zoom-out-up"] {
+  animation: zoomOutUp 1s ease-in-out;
+}
+div[data-aos="zoom-out-left"] {
+  animation: zoomOutLeft 1s ease-in-out;
+}
+div[data-aos="zoom-out-down"] {
+  animation: zoomOutDown 1s ease-in-out;
+}
+div[data-aos="zoom-out-right"] {
+  animation: zoomOutRight 1s ease-in-out;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoomOutUp {
+  from {
+    transform: scale(1.1) translateY(100px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes zoomOutLeft {
+  from {
+    transform: scale(1.1) translateX(100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes zoomOutDown {
+  from {
+    transform: scale(1.1) translateY(-100px);
+  }
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes zoomOutRight {
+  from {
+    transform: scale(1.1) translateX(-100px);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
